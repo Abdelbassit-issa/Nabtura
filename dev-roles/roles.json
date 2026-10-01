@@ -1,0 +1,1 @@
+{"roles":{"dev":"Developer role - code, docs, commits, pushes","docs":"Docs maintainer - index, justification files","agent":"Agent engineer - new nodes, state schema","release":"Release manager - milestone verification, tag pushes"}}
