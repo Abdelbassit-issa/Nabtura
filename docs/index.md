@@ -11,3 +11,4 @@
 - 0009_cost_agent.md — Cost agent doc
 - 0010_deep_search.md — Deep search agent doc
 - 0011_security_fuzz.md — Milestone 4A security/fuzz
+- 0012_load_testing.md — Milestone 4B load testing
