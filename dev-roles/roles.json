@@ -1,1 +1,7 @@
 {"roles":{"dev":"Developer role - code, docs, commits, pushes","docs":"Docs maintainer - index, justification files","agent":"Agent engineer - new nodes, state schema","release":"Release manager - milestone verification, tag pushes"}}
+,"prdlb":"PRD rules enforcer — minimal dependencies only, KISS, no over-engineering, no extra design patterns without justification doc"
+,"kisstb":"KISS checker — every node stays simple, no abstraction layers"
+,"isoltb":"Isolation guard — TeamState isolation, supervisor routing only, no subgraph leaks"
+,"duratb":"Durability verifier — PostgresSaver session persistence, resumable execution"
+,"contb":"Container guard — Docker-compose single command, no extra services"
+,"failtb":"Failure isolation — single agent failure never crashes workflow"
