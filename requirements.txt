@@ -1,0 +1,8 @@
+langgraph
+fastapi
+psycopg2-binary
+redis
+pika
+python-dotenv
+uvicorn
+openpyxl
