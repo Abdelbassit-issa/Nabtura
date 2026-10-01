@@ -24,4 +24,6 @@ async def feasibility_study(payload: dict):
                                   "status": "running",
                                   "agent_output": {},
                                   "session_id": "stub_session_1"})
-    return {"status": result.get("status"), "agent_output": result.get("agent_output")}
+from .report_generator import generate_report
+    report_path = generate_report(result)
+    return {"status": result.get("status"), "agent_output": result.get("agent_output"), "segments": result.get("agent_output", {}).get("deep_insight", {}), "report_path": report_path}
