@@ -11,7 +11,8 @@ app = FastAPI()
 
 # PostgresSaver initialized at startup (hard-to-change, documented)
 # This is the state persistence approach — if changed, must ask user.
-DB_URL = "postgresql://user:pass@postgres:5432/nabtura"
+import os
+DB_URL = os.getenv("DATABASE_URL", "postgresql://postgres:5432/nabtura")
 saver = PostgresSaver.from_conn_string(DB_URL)
 
 @app.post("/feasibility-study")
