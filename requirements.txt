@@ -6,3 +6,6 @@ pika
 python-dotenv
 uvicorn
 openpyxl
+fpdf2
+arabic_reshaper
+python-bidi
