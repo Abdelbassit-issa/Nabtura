@@ -10,7 +10,7 @@
 - 0008_risk_agent.md — Risk agent doc
 - 0009_cost_agent.md — Cost agent doc
 - 0010_deep_search.md — Deep search agent doc
-- 0011_security_fuzz.md — Milestone 4A security/fuzz
-- 0012_load_testing.md — Milestone 4B load testing
-- 0013_arabic_pdf.md — Milestone 4C Arabic PDF/Excel
-- 0014_real_modeling.md — Milestone 4D real modeling
+- 0011_security_fuzz.md — Milestone 4A security/fuzz testing implementation
+- 0012_load_testing.md — Milestone 4B load testing implementation
+- 0013_arabic_pdf.md — Milestone 4C Arabic PDF/Excel report generation
+- 0014_real_modeling.md — Milestone 4D real financial modeling formulas
