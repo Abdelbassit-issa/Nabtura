@@ -5,8 +5,17 @@ from .state import TeamState
 
 # Real formulas per framework: NPV, IRR, MPI/ARI/RGI, GOPPAR, Flow-Through
 
+def _safe_float(val, default=0.0):
+    try:
+        f = float(val) if val is not None else default
+        if math.isnan(f) or math.isinf(f) or f < 0:
+            return default
+        return f
+    except (ValueError, TypeError):
+        return default
+
 def financial_modeling(state: TeamState) -> TeamState:
-    budget = float(state.get("budget", 0))
+    budget = _safe_float(state.get("budget", 0))
     # Simple NPV stub (discounted at 10% over 5 years, stub cash flow = budget*0.15/yr)
     r = 0.10
     n = 5
